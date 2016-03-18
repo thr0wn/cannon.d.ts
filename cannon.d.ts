@@ -555,7 +555,8 @@
         collisionFilterMask?: number;
         fixedRotation?: boolean;
         shape?: Body;
-
+        linearFactor?: Vec3;
+        angularFactor?: Vec3;
     }
 
     export class Body extends EventTarget {
@@ -587,6 +588,8 @@
         invMass: number;
         material: Material;
         linearDamping: number;
+        linearFactor: Vec3;
+        angularFactor: Vec3;
         type: number;
         allowSleep: boolean;
         sleepState: number;
